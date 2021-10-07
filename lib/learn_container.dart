@@ -9,6 +9,10 @@ import 'package:flutter/material.dart';
 /// * Wrap the child other wise
 /// * shouldn't be rendered without parents
 
+
+var assetsImages = const AssetImage("image1.webp");
+var image = Image(image: assetsImages, fit: BoxFit.cover,);
+
 class LearnContainer extends StatelessWidget {
   const LearnContainer({Key? key}) : super(key: key);
 
@@ -37,13 +41,8 @@ class LearnContainer extends StatelessWidget {
               border: Border.all(
                   width: 2.0,
               ),
-            image: const DecorationImage(
-              image: NetworkImage("https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455_1280.jpg"),
-              fit: BoxFit.cover
-            )
           ),
-          alignment: const Alignment(0.5, 0.5),
-          child: const Text("Hello flutter Network Image", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 25),),
+          child: image,
         ),
       )
     );
