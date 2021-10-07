@@ -31,20 +31,15 @@ class LearnContainer extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          constraints: const BoxConstraints.expand(width: 400),
+          width: 400,
+          height: 350,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(15),
-            color: Colors.lightBlue,
               border: Border.all(
                   width: 2.0,
-                color: Colors.blueGrey
               )
           ),
-          child: const Text(
-            "Hello Flutter",
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-            ),
           alignment: const Alignment(0.0, 0.0),
+          child: Image.network("https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455_1280.jpg", fit: BoxFit.cover,),
         ),
       )
     );
