@@ -36,10 +36,14 @@ class LearnContainer extends StatelessWidget {
           decoration: BoxDecoration(
               border: Border.all(
                   width: 2.0,
-              )
+              ),
+            image: const DecorationImage(
+              image: NetworkImage("https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455_1280.jpg"),
+              fit: BoxFit.cover
+            )
           ),
-          alignment: const Alignment(0.0, 0.0),
-          child: Image.network("https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455_1280.jpg", fit: BoxFit.cover,),
+          alignment: const Alignment(0.5, 0.5),
+          child: const Text("Hello flutter Network Image", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 25),),
         ),
       )
     );
