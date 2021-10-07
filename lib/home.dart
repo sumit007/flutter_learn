@@ -31,7 +31,7 @@ class Home extends StatelessWidget {
         ],
       ),
       body: const Padding(
-        padding: EdgeInsets.all(30),
+        padding: EdgeInsets.only(top: 30),
         child: Text("Hello Sumit"),
       )
 
