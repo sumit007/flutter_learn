@@ -31,9 +31,16 @@ class LearnContainer extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          color: Colors.lightBlue,
           width: 300,
           height: 300,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(15),
+            color: Colors.lightBlue,
+              border: Border.all(
+                  width: 2.0,
+                color: Colors.blueGrey
+              )
+          ),
         ),
       )
     );
