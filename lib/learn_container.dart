@@ -41,6 +41,11 @@ class LearnContainer extends StatelessWidget {
                 color: Colors.blueGrey
               )
           ),
+          child: const Text(
+            "Hello Flutter",
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
+          alignment: const Alignment(0.0, 0.0),
         ),
       )
     );
