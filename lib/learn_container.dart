@@ -29,11 +29,13 @@ class LearnContainer extends StatelessWidget {
           IconButton(onPressed: () {print("");}, icon: const Icon(Icons.settings))
         ],
       ),
-      body: Container(
-        color: Colors.lightBlue,
-        width: 300,
-        height: 300,
-      ),
+      body: Center(
+        child: Container(
+          color: Colors.lightBlue,
+          width: 300,
+          height: 300,
+        ),
+      )
     );
   }
 
