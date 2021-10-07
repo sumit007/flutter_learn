@@ -30,28 +30,12 @@ class Home extends StatelessWidget {
           )
         ],
       ),
-      body: const Center(
-          child:
-          Text.rich(
-            TextSpan(
-              children: <TextSpan>[
-                TextSpan(
-                  text: "Hello",
-                  style: TextStyle(
-                    fontStyle: FontStyle.italic,
-                    fontSize: 25
-                  )
-                ),
-                TextSpan(
-                  text: "World",
-                  style: TextStyle(
-                    fontSize: 25
-                  )
-                )
-              ]
-            )
-          )
-      ),
+      body: const Padding(
+        padding: EdgeInsets.all(30),
+        child: Text("Hello Sumit"),
+      )
+
+        
     );
   }
   
