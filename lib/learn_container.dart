@@ -31,6 +31,8 @@ class LearnContainer extends StatelessWidget {
       ),
       body: Container(
         color: Colors.lightBlue,
+        width: 300,
+        height: 300,
       ),
     );
   }
