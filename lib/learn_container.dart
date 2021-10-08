@@ -42,7 +42,7 @@ class LearnContainer extends StatelessWidget {
                   width: 2.0,
               ),
           ),
-          child: image,
+          child: IconButton(onPressed: () {print("");}, icon: const Icon(Icons.mail_outline, size: 80)),
         ),
       )
     );
