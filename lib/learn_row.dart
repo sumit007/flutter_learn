@@ -55,13 +55,17 @@ class LearnRow extends StatelessWidget {
             IconButton(onPressed: () {print("");}, icon: const Icon(Icons.settings))
           ],
         ),
-        body: ListView.builder(
-            itemCount: content.length,
-            itemBuilder: (BuildContext contex, int index) {
-              return ListTile(
-                title: Text(content[index]),
-              );
-            }
+        body: Center(
+          child: InkWell(
+            onTap: (){print("on Tapped");},
+            child: Container(
+              padding: const EdgeInsets.all(12),
+              child: const Text(
+                "I am feeling happy",
+                style: TextStyle(fontSize: 25),
+              ),
+            ),
+          )
         )
     );
   }
