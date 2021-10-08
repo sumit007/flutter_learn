@@ -24,8 +24,9 @@ class LearnRow extends StatelessWidget {
             IconButton(onPressed: () {print("");}, icon: const Icon(Icons.settings))
           ],
         ),
-        body: Row(
+        body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             IconButton(onPressed: () {print("");}, icon: const Icon(Icons.male_outlined)),
             const Icon(Icons.image),
