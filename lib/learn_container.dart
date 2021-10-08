@@ -21,7 +21,10 @@ class LearnContainer extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
-        onPressed: () { print("On Pressed"); },
+        onPressed: () {
+          print("On Pressed");
+          Navigator.pop(context);
+        },
         backgroundColor: Colors.black,
       ),
       appBar: AppBar(
