@@ -4,5 +4,5 @@ import 'package:flutter_learn/my_app.dart';
 import 'home_state_ful.dart';
 
 void main() {
-  runApp(const HomeStateFul());
+  runApp(const MyApp());
 }
